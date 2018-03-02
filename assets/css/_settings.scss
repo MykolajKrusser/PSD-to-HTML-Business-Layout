@@ -1,0 +1,37 @@
+@charset "utf-8";
+$yellow: #ffbb42;
+$fz: 14px;
+/*
+main fonts
+ */
+$ff: 'OpenSans', sans-serif;
+/*
+lato fore h2
+ */
+$ffH2: 18px;
+$ff2: 'Lato';
+/*
+headers fonts
+ */
+$ffHeaders:'GothamBlackRegular';
+$ffBrandonGrotesque: 'BrandonGrotesque-Bold';
+
+$inputTextColor: #6e6e6e;
+
+%wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+%flex{
+  display: flex;
+  flex-wrap: nowrap;
+}
+%yellowBtn{
+  color: white;
+  background: #ffbb42;
+  transition: all 0.5s ease;
+}
+
