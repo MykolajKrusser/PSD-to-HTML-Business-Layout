@@ -1,0 +1,29 @@
+#our_services{
+  height: 100vh;
+  div{
+    @extend %wrapper;
+    @extend %flex;
+    @extend %blocksCol;
+    color: $textColor;
+    h2{
+      @extend %head;
+    }
+    p{
+      @extend %headDescription;
+    }
+    div{
+      @extend %flex;
+      @extend %wrapper;
+      flex-direction: row;
+      border: 1px solid black;
+      margin-top: 80px;
+      max-width: 1170px;
+      justify-content: space-between;
+      div{
+        height: 180px;
+        width: calc(50% - 30px);
+        margin: 15px 0;
+      }
+    }
+  }
+}

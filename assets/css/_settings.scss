@@ -1,5 +1,7 @@
 @charset "utf-8";
-$yellow: #ffbb42;
+$btnColor: #ffbb42;
+$textColor: #394b50;
+
 $fz: 14px;
 /*
 main fonts
@@ -8,16 +10,16 @@ $ff: 'OpenSans', sans-serif;
 /*
 lato fore h2
  */
-$ffH2: 18px;
+$fzH2: 24px;
 $ff2: 'Lato';
 /*
 headers fonts
  */
+$fzH1: 30px;
 $ffHeaders:'GothamBlackRegular';
 $ffBrandonGrotesque: 'BrandonGrotesque-Bold';
 
 $inputTextColor: #6e6e6e;
-
 %wrapper{
   max-width: 1170px;
   margin: 0 auto;
@@ -27,11 +29,34 @@ $inputTextColor: #6e6e6e;
 }
 %flex{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 %yellowBtn{
   color: white;
   background: #ffbb42;
   transition: all 0.5s ease;
+}
+section {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+%head{
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-family: $ffHeaders;
+  font-size: $fzH2;
+}
+%headDescription{
+  margin-top: 10px;
+  width: 60%;
+  font-family: $ff;
+  font-weight: 300;
+}
+%blocksCol{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
