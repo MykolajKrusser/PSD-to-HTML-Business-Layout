@@ -15,15 +15,50 @@
       @extend %flex;
       @extend %wrapper;
       flex-direction: row;
-      border: 1px solid black;
       margin-top: 80px;
       max-width: 1170px;
       justify-content: space-between;
       div{
+        @extend %flex;
+        flex-direction: row;
+        justify-content: space-between;
         height: 180px;
-        width: calc(50% - 30px);
+
         margin: 15px 0;
+        &.col{
+          width: calc(50% - 30px);
+        }
+        .svg-inline--fa{
+          width: 3.15em;
+          height: 3.15em;
+          color: $iconColor;
+          margin-bottom: 30px;
+        }
+        div{
+          @extend %flex;
+          flex-direction: column;
+          width: 82%;
+          text-align: left;
+          padding: 48px 0;
+          color: $textColor;
+          font-family: $ff;
+          font-size: $fz;
+          h3{
+            width: 100%;
+          }
+          p{
+            width: 100%;
+          }
+        }
       }
     }
+  }
+}
+@media screen and (max-width: 1024px){
+  #our_services div div div.col{
+    width: calc(100% - 0px);
+  }
+  #our_services div div div div{
+    padding: 30px 0;
   }
 }

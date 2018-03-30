@@ -1,8 +1,5 @@
 @import url(fonts.css);
 /*
-main fonts
- */
-/*
 lato fore h2
  */
 /*
@@ -15,7 +12,7 @@ nav, header .wrapper, #our_services div, #our_services div div {
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +195,27 @@ header .wrapper div:last-of-type span:hover {
   border-color: #ffbb42;
 }
 
+@media screen and (max-width: 1024px) {
+  header .wrapper div:first-of-type {
+    width: 100%;
+  }
+
+  nav div {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  nav div a {
+    margin: 0;
+    padding: 10px 4px;
+  }
+
+  nav img {
+    display: none;
+  }
+}
 #our_services {
   height: 100vh;
 }
@@ -209,7 +227,6 @@ header .wrapper div:last-of-type span:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid black;
   margin-top: 80px;
   max-width: 1170px;
   -webkit-box-pack: justify;
@@ -217,9 +234,52 @@ header .wrapper div:last-of-type span:hover {
           justify-content: space-between;
 }
 #our_services div div div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 180px;
-  width: calc(50% - 30px);
   margin: 15px 0;
+}
+#our_services div div div.col {
+  width: calc(50% - 30px);
+}
+#our_services div div div .svg-inline--fa {
+  width: 3.15em;
+  height: 3.15em;
+  color: #709dca;
+  margin-bottom: 30px;
+}
+#our_services div div div div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 82%;
+  text-align: left;
+  padding: 48px 0;
+  color: #394b50;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+}
+#our_services div div div div h3 {
+  width: 100%;
+}
+#our_services div div div div p {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  #our_services div div div.col {
+    width: calc(100% - 0px);
+  }
+
+  #our_services div div div div {
+    padding: 30px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
