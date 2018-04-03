@@ -1,0 +1,66 @@
+#howItWorks{
+  @extend %flex;
+  @extend %blocksCol;
+  color: $textColor;
+  .howItWorks__header{
+    @extend %flex;
+    @extend %wrapper;
+    @extend %blocksCol;
+    h2{
+      @extend %head;
+    }
+    article{
+      @extend %headDescription;
+    }
+  }
+  .howItWorks__items{
+    @extend %flex;
+    @extend %wrapper;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+    div{
+      @extend %flex;
+      background: $priceItemBG;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 0 40px;
+      color:$textColor;
+      &.col{
+        width:calc(25% - 80px);
+      }
+      @extend %transition;
+      .svg-inline--fa{
+        color:$iconColor;
+        margin: 3em auto;
+        width: 6.5em;
+        height: 6.5em;
+      }
+      h3{
+        margin-top: 1.5em;
+        font-family: $ff2;
+        font-weight: 700;
+        font-size: $fzH2;
+        text-transform: uppercase;
+      }
+      article{
+        margin-top: 1em;
+        font-family: $ff;
+        font-size: $fz;
+        line-height: 25px;
+      }
+    }
+  }
+  a{
+    @extend %yellowBtn;
+    width: 130px;
+    height: 45px;
+    margin: 90px auto 150px auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 15px;
+    border-radius: 4px;
+  }
+}

@@ -5,14 +5,14 @@ lato fore h2
 /*
 headers fonts
  */
-nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item {
+nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items {
   max-width: 1170px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@ nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of
       flex-wrap: wrap;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a {
   color: white;
   background: #ffbb42;
 }
@@ -32,21 +32,21 @@ section {
           box-sizing: border-box;
 }
 
-header .wrapper h1, #our_services div h2, #price .price__header h2 {
+header .wrapper h1, #our_services div h2, #price .price__header h2, #howItWorks .howItWorks__header h2 {
   margin-top: 80px;
   text-transform: uppercase;
   font-family: "GothamBlackRegular", serif;
   font-size: 24px;
 }
 
-header .wrapper p, #our_services div p, #price .price__header article {
+header .wrapper p, #our_services div p, #price .price__header article, #howItWorks .howItWorks__header article {
   margin-top: 10px;
   width: 60%;
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
 
-#our_services div, #price, #price .price__header {
+#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,7 +60,7 @@ header .wrapper p, #our_services div p, #price .price__header article {
   text-align: center;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover, #howItWorks .howItWorks__items div {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -364,6 +364,7 @@ header .wrapper div:last-of-type span:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 80px;
+  margin-bottom: 180px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -443,6 +444,64 @@ header .wrapper div:last-of-type span:hover {
   #price .price__item div.col {
     width: 100%;
   }
+}
+#howItWorks {
+  color: #394b50;
+}
+#howItWorks .howItWorks__items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#howItWorks .howItWorks__items div {
+  background: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 40px;
+  color: #394b50;
+}
+#howItWorks .howItWorks__items div.col {
+  width: calc(25% - 80px);
+}
+#howItWorks .howItWorks__items div .svg-inline--fa {
+  color: #709dca;
+  margin: 3em auto;
+  width: 6.5em;
+  height: 6.5em;
+}
+#howItWorks .howItWorks__items div h3 {
+  margin-top: 1.5em;
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#howItWorks .howItWorks__items div article {
+  margin-top: 1em;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+#howItWorks a {
+  width: 130px;
+  height: 45px;
+  margin: 90px auto 150px auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 15px;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
