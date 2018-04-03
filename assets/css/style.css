@@ -5,14 +5,14 @@ lato fore h2
 /*
 headers fonts
  */
-nav, header .wrapper, #our_services div, #our_services div div {
+nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item {
   max-width: 1170px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,11 +20,9 @@ nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of
       flex-wrap: wrap;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a {
   color: white;
   background: #ffbb42;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 section {
@@ -34,21 +32,21 @@ section {
           box-sizing: border-box;
 }
 
-header .wrapper h1, #our_services div h2 {
+header .wrapper h1, #our_services div h2, #price .price__header h2 {
   margin-top: 80px;
   text-transform: uppercase;
-  font-family: "GothamBlackRegular";
+  font-family: "GothamBlackRegular", serif;
   font-size: 24px;
 }
 
-header .wrapper p, #our_services div p {
+header .wrapper p, #our_services div p, #price .price__header article {
   margin-top: 10px;
   width: 60%;
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
 
-#our_services div {
+#our_services div, #price, #price .price__header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,6 +58,11 @@ header .wrapper p, #our_services div p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 * {
@@ -107,8 +110,6 @@ nav div a {
   text-transform: uppercase;
   border: 1px solid transparent;
   border-radius: 2px;
-  -webkit-transition: background 0.5s ease;
-  transition: background 0.5s ease;
 }
 
 header {
@@ -188,8 +189,6 @@ header .wrapper div:last-of-type span {
   height: 15px;
   border: 1px solid #1ca8dd;
   border-radius: 50%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 header .wrapper div:last-of-type span:hover {
   border-color: #ffbb42;
@@ -215,9 +214,6 @@ header .wrapper div:last-of-type span:hover {
   nav img {
     display: none;
   }
-}
-#our_services {
-  height: 100vh;
 }
 #our_services div {
   color: #394b50;
@@ -280,6 +276,164 @@ header .wrapper div:last-of-type span:hover {
   #our_services div div div div {
     padding: 30px 0;
   }
+}
+#aboutUs {
+  background: #ffbb42 url(../img/aboutUs.jpg) no-repeat left;
+  background-size: 50% 100%;
+  color: white;
+}
+#aboutUs div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#aboutUs div .aboutUs__empty {
+  width: 50%;
+}
+#aboutUs div .aboutUs__container {
+  width: 50%;
+  min-height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#aboutUs div .aboutUs__container h2 {
+  margin: auto 1px 2.15rem 5.7rem;
+  text-transform: uppercase;
+  font-family: "GothamBlackRegular", serif;
+  font-size: 24px;
+}
+#aboutUs div .aboutUs__container article {
+  line-height: 25px;
+  margin: 0 1px 0 5.7rem;
+}
+#aboutUs div .aboutUs__container a {
+  text-align: center;
+  padding-top: 13px;
+  width: 150px;
+  height: 45px;
+  margin: 2.15rem 1px auto 5.7rem;
+  border: 1px solid #e7ad48;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Lato", serif, serif;
+}
+#aboutUs div .aboutUs__container a:hover {
+  background: #6699cc;
+}
+
+@media screen and (max-width: 800px) {
+  #aboutUs {
+    background-size: 0 0;
+  }
+
+  #aboutUs div .aboutUs__empty {
+    width: 0;
+  }
+
+  #aboutUs div .aboutUs__container {
+    width: 100%;
+    padding: 2rem;
+    min-height: 0;
+  }
+
+  #aboutUs div .aboutUs__container h2 {
+    margin: auto 0 1rem 0;
+  }
+
+  #aboutUs div .aboutUs__container article {
+    margin: 0;
+  }
+
+  #aboutUs div .aboutUs__container a {
+    margin: 1rem 0 auto 0;
+  }
+}
+#price {
+  background: #e7edf3;
+}
+#price .price__item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#price .price__item div {
+  background: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding-top: 4%;
+  color: #394b50;
+}
+#price .price__item div.col {
+  width: 33%;
+}
+#price .price__item div:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  background: #6699cc;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+#price .price__item div:hover .price__item__cost {
+  color: white;
+}
+#price .price__item div:hover .price__item__month {
+  color: white;
+}
+#price .price__item div:hover span {
+  color: white;
+}
+#price .price__item div h3 {
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#price .price__item div .price__item__cost {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-size: 52px;
+  color: #ffbb42;
+  border-bottom: 0 solid #b5bbc1;
+}
+#price .price__item div .price__item__month {
+  margin: 0 10% 7% 10%;
+  color: #394b50;
+  border-bottom: 0 solid #b5bbc1;
+}
+#price .price__item div span {
+  margin: 5px 10%;
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #b5bbc1;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b5bbc1;
+}
+#price .price__item div a {
+  width: 130px;
+  height: 45px;
+  margin: 40px auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 4%;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

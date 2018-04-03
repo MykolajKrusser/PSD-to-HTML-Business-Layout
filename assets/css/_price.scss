@@ -1,0 +1,90 @@
+#price{
+  background: $bgColor;
+  @extend %flex;
+  @extend %blocksCol;
+  .price__header{
+    @extend %flex;
+    @extend %blocksCol;
+    h2{
+      @extend %head;
+    }
+    article{
+      @extend %headDescription;
+    }
+  }
+  .price__item{
+    @extend %flex;
+    @extend %wrapper;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+    div{
+      @extend %flex;
+      background: $priceItemBG;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding-top:4%;
+      color:$textColor;
+      &.col{
+        width:33%;
+      }
+      @extend %transition;
+      &:hover{
+        transform: scale(1.2,1.2);
+        @extend %transition;
+        background: $bgMainColor;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: $secondTextColor;
+        .price__item__cost{
+          color: $secondTextColor;
+        }
+        .price__item__month{
+          color: $secondTextColor;
+        }
+        span{
+          color: $secondTextColor;
+        }
+      }
+      h3{
+        font-family: $ff2;
+        font-weight: 300;
+        font-size: $fzH2;
+        text-transform: uppercase;
+      }
+      .price__item__cost{
+        font-family: $ff2;
+        font-weight: 700;
+        font-size: 52px;
+        color:$btnColor;
+        border-bottom: 0 solid $textItemColor;
+      }
+      .price__item__month{
+        margin: 0 10% 7% 10%;
+        color:$textColor ;
+        border-bottom: 0 solid $textItemColor;
+      }
+      span{
+        margin: 5px 10%;
+        font-family: $ff2;
+        font-weight: 300;
+        font-size: 16px;
+        color:$textItemColor;
+        text-transform: uppercase;
+        border-bottom: 1px solid $textItemColor;
+      }
+      a{
+        @extend %yellowBtn;
+        width: 130px;
+        height: 45px;
+        margin: 40px auto;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 4%;
+        border-radius: 4px;
+      }
+    };
+  }
+}

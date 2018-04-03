@@ -1,0 +1,69 @@
+#aboutUs{
+  background:$btnColor url(../img/aboutUs.jpg) no-repeat left;
+  background-size: 50% 100%;
+  color: $secondTextColor;
+  div{
+    @extend %wrapper;
+    @extend %flex;
+    flex-direction: row;
+    .aboutUs__empty{
+      width: 50%;
+    }
+    .aboutUs__container{
+      width: 50%;
+      min-height: 70vh;
+      @extend %flex;
+      flex-direction: column;
+      h2{
+        margin: auto 1px 2.15rem 5.7rem;
+        text-transform: uppercase;
+        font-family: $ffHeaders , serif;
+        font-size: $fzH2;
+      }
+      article{
+        line-height: 25px;
+        margin: 0 1px 0 5.7rem;
+      }
+      a{
+        text-align: center;
+        padding-top: 13px;
+        width: 150px;
+        height: 45px;
+        margin: 2.15rem 1px auto 5.7rem;
+        @extend %yellowBtn;
+        border: 1px solid rgb(231, 173, 72);
+        border-radius: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $ff2, serif;
+        @extend %transition;
+        &:hover{
+          background: $bgMainColor;
+          @extend %transition;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  #aboutUs{
+    background-size: 0 0;
+  }
+  #aboutUs div .aboutUs__empty{
+    width: 0;
+  }
+  #aboutUs div .aboutUs__container{
+    width: 100%;
+    padding: 2rem;
+    min-height: 0;
+  }
+  #aboutUs div .aboutUs__container h2{
+    margin: auto 0 1rem 0;
+  }
+  #aboutUs div .aboutUs__container article{
+    margin: 0;
+  }
+  #aboutUs div .aboutUs__container a{
+    margin: 1rem 0 auto 0;
+  }
+}

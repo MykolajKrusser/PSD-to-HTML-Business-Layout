@@ -1,5 +1,4 @@
 #our_services{
-  height: 100vh;
   div{
     @extend %wrapper;
     @extend %flex;
@@ -23,7 +22,6 @@
         flex-direction: row;
         justify-content: space-between;
         height: 180px;
-
         margin: 15px 0;
         &.col{
           width: calc(50% - 30px);

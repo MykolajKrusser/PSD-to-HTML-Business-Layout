@@ -1,0 +1,125 @@
+nav{
+  @extend %wrapper;
+  @extend %flex;
+  font-size: $fz;
+  background: #ffffff;
+  justify-content: space-between;
+  img{
+    width: 50px;
+    height: 50px;
+    margin: 25px 0;
+  }
+  div{
+    @extend %flex;
+    justify-content: flex-end;
+    width:75%;
+    align-items: center;
+    a{
+      margin: 25px 0;
+      color: #868686;
+      padding: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      @extend %transition;
+      &:hover{
+        @extend %yellowBtn;
+        @extend %transition;
+      }
+    }
+  }
+}
+header{
+  position: relative;
+  background: linear-gradient($bgMainColor 83%, white 17%);
+  min-height: 100vh;
+  .wrapper{
+    @extend %wrapper;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    h1{
+      @extend %head;
+      font-size: $fzH1;
+      margin-top: 100px;
+    }
+    p{
+      @extend %headDescription;
+    }
+    form{
+      @extend %flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      max-width: 100%;
+      box-sizing: border-box;
+      margin: 35px 0;
+      input{
+        box-sizing: border-box;
+        width: 260px;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        outline: none;
+        font-family: $ff;
+        color: $inputTextColor;
+        margin: 7px 7px;
+        padding: 15px 17px;
+      }
+      input[type="button"]{
+        @extend %yellowBtn;
+      }
+    }
+    div:first-of-type{
+      position: relative;
+      box-sizing: border-box;
+      width: 60%;
+      height: 350px;
+      margin-top: 65px;
+      background: url(../img/Laptop.png) no-repeat center;
+      background-size: 100% 100%;
+      img{
+        box-sizing: border-box;
+        width: 70%;
+        height: 269px;
+        margin-top: 19px;
+      }
+    }
+    div:last-of-type{
+      @extend %flex;
+      justify-content: space-around;
+      span{
+        margin: 25px 4px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #1ca8dd;
+        border-radius: 50%;
+        @extend %transition;
+        &:hover{
+          @extend %yellowBtn;
+          border-color: $btnColor;
+        }
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  header .wrapper div:first-of-type{
+    width: 100%;
+  }
+  nav div{
+    width: 100%;
+    justify-content: center;
+  }
+  nav div a{
+    margin: 0;
+    padding: 10px 4px;
+  }
+  nav img{
+    display: none;
+  }
+}
