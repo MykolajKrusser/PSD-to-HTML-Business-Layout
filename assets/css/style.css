@@ -355,6 +355,9 @@ header .wrapper div:last-of-type span:hover {
 #price {
   background: #e7edf3;
 }
+#price .price__header {
+  color: #394b50;
+}
 #price .price__item {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -434,6 +437,12 @@ header .wrapper div:last-of-type span:hover {
   text-decoration: none;
   padding-top: 4%;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  #price .price__item div.col {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
