@@ -5,14 +5,14 @@ lato fore h2
 /*
 headers fonts
  */
-nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items {
+nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #happyClients .happyClients__header, #happyClients .happyClients__items {
   max-width: 1170px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div, #happyClients .happyClients__header, #happyClients .happyClients__items, #happyClients .happyClients__items div, #happyClients .happyClients__items div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,21 +32,21 @@ section {
           box-sizing: border-box;
 }
 
-header .wrapper h1, #our_services div h2, #price .price__header h2, #howItWorks .howItWorks__header h2 {
+header .wrapper h1, #our_services div h2, #price .price__header h2, #howItWorks .howItWorks__header h2, #happyClients .happyClients__header h2 {
   margin-top: 80px;
   text-transform: uppercase;
   font-family: "GothamBlackRegular", serif;
   font-size: 24px;
 }
 
-header .wrapper p, #our_services div p, #price .price__header article, #howItWorks .howItWorks__header article {
+header .wrapper p, #our_services div p, #price .price__header article, #howItWorks .howItWorks__header article, #happyClients .happyClients__header article {
   margin-top: 10px;
   width: 60%;
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
 
-#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header {
+#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header, #happyClients .happyClients__header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,7 +60,7 @@ header .wrapper p, #our_services div p, #price .price__header article, #howItWor
   text-align: center;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover, #howItWorks .howItWorks__items div {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -436,7 +436,7 @@ header .wrapper div:last-of-type span:hover {
   margin: 40px auto;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 4%;
+  padding-top: 14px;
   border-radius: 4px;
 }
 
@@ -502,6 +502,109 @@ header .wrapper div:last-of-type span:hover {
   text-decoration: none;
   padding-top: 15px;
   border-radius: 4px;
+}
+#howItWorks .howItWorks__items__arrow {
+  width: 160px;
+  -webkit-transform: translate(175px, -195px);
+          transform: translate(175px, -195px);
+}
+#howItWorks .howItWorks__items__arrow-180 {
+  width: 160px;
+  -webkit-transform: rotate(180deg) translate(-175px, 0px);
+          transform: rotate(180deg) translate(-175px, 0px);
+}
+
+@media screen and (max-width: 960px) {
+  #howItWorks .howItWorks__items div.col {
+    width: 50%;
+  }
+
+  #howItWorks .howItWorks__items__arrow {
+    display: none;
+  }
+
+  #howItWorks .howItWorks__items__arrow-180 {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #howItWorks .howItWorks__items div.col {
+    width: 100%;
+  }
+}
+#happyClients {
+  background: #ffbb42;
+}
+#happyClients .happyClients__header {
+  color: white;
+}
+#happyClients .happyClients__items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#happyClients .happyClients__items div {
+  background: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 20px;
+  color: #394b50;
+}
+#happyClients .happyClients__items div.col {
+  width: calc(50% - 40px);
+}
+#happyClients .happyClients__items div img {
+  margin: 40px 30px;
+  width: 121px;
+  height: 121px;
+}
+#happyClients .happyClients__items div div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 59%;
+}
+#happyClients .happyClients__items div div blockquote {
+  margin-top: 1em;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+#happyClients .happyClients__items div div blockquote sup, #happyClients .happyClients__items div div blockquote sub {
+  font-size: 42px;
+}
+#happyClients .happyClients__items div div span {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #b5bbc1;
+}
+#happyClients .happyClients__items div div .happyClients__items__orange {
+  color: #f6772c;
+}
+
+@media screen and (max-width: 1024px) {
+  #happyClients .happyClients__items div.col {
+    width: 100%;
+  }
+  #happyClients .happyClients__items div.col img {
+    margin: 20px auto;
+  }
+  #happyClients .happyClients__items div.col div {
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

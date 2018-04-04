@@ -1,0 +1,73 @@
+#happyClients{
+  background: $btnColor;
+  .happyClients__header{
+    @extend %flex;
+    @extend %wrapper;
+    @extend %blocksCol;
+    color: $secondTextColor;
+    h2{
+      @extend %head;
+    }
+    article{
+      @extend %headDescription;
+    }
+  }
+  .happyClients__items{
+    @extend %flex;
+    @extend %wrapper;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+    div {
+      @extend %flex;
+      background: $priceItemBG;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      margin: 20px;
+      color: $textColor;
+      &.col {
+        width: calc(50% - 40px);
+      }
+      img{
+        margin: 40px 30px;
+        width: 121px;
+        height: 121px;
+      }
+      div{
+        @extend %flex;
+        flex-direction: column;
+        width: 59%;
+        blockquote{
+          margin-top: 1em;
+          font-family: $ff;
+          font-size: $fz+2;
+          line-height: 25px;
+          sup, sub{
+            font-size: $fz*3;
+          }
+        }
+        span{
+          text-transform: uppercase;
+          font-size: 16px;
+          color: $textItemColor;
+        }
+        .happyClients__items__orange{
+          color: #f6772c;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px){
+  #happyClients .happyClients__items div.col{
+    width: 100%;
+    img{
+      margin: 20px auto;
+    }
+    div{
+      margin: 20px auto;
+    }
+  }
+}
