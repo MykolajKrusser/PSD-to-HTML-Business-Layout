@@ -16,7 +16,7 @@
     @extend %flex;
     @extend %wrapper;
     flex-direction: row;
-    margin-top: 80px;
+    margin: 80px auto;
     width: 100%;
     justify-content: center;
     div {

@@ -5,14 +5,14 @@ lato fore h2
 /*
 headers fonts
  */
-nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #happyClients .happyClients__header, #happyClients .happyClients__items {
+nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #happyClients .happyClients__header, #happyClients .happyClients__items, #newsLetter div {
   max-width: 1170px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div, #happyClients .happyClients__header, #happyClients .happyClients__items, #happyClients .happyClients__items div, #happyClients .happyClients__items div div {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div, #happyClients .happyClients__header, #happyClients .happyClients__items, #happyClients .happyClients__items div, #happyClients .happyClients__items div div, #newsLetter div, #newsLetter div form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@ nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of
       flex-wrap: wrap;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"] {
   color: white;
   background: #ffbb42;
 }
@@ -32,21 +32,21 @@ section {
           box-sizing: border-box;
 }
 
-header .wrapper h1, #our_services div h2, #price .price__header h2, #howItWorks .howItWorks__header h2, #happyClients .happyClients__header h2 {
+header .wrapper h1, #our_services div h2, #price .price__header h2, #howItWorks .howItWorks__header h2, #happyClients .happyClients__header h2, #newsLetter div h2 {
   margin-top: 80px;
   text-transform: uppercase;
   font-family: "GothamBlackRegular", serif;
   font-size: 24px;
 }
 
-header .wrapper p, #our_services div p, #price .price__header article, #howItWorks .howItWorks__header article, #happyClients .happyClients__header article {
+header .wrapper p, #our_services div p, #price .price__header article, #howItWorks .howItWorks__header article, #happyClients .happyClients__header article, #newsLetter div article {
   margin-top: 10px;
   width: 60%;
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
 
-#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header, #happyClients .happyClients__header {
+#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header, #happyClients .happyClients__header, #newsLetter div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,7 +60,7 @@ header .wrapper p, #our_services div p, #price .price__header article, #howItWor
   text-align: center;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"], nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover, #newsLetter div div div {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -114,8 +114,8 @@ nav div a {
 
 header {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(83%, #6699cc), color-stop(17%, white));
-  background: linear-gradient(#6699cc 83%, white 17%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(78%, #6699cc), color-stop(22%, white));
+  background: linear-gradient(#6699cc 78%, white 22%);
   min-height: 100vh;
 }
 header .wrapper {
@@ -543,7 +543,7 @@ header .wrapper div:last-of-type span:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 80px;
+  margin: 80px auto;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -604,6 +604,93 @@ header .wrapper div:last-of-type span:hover {
   }
   #happyClients .happyClients__items div.col div {
     margin: 20px auto;
+  }
+}
+#newsLetter {
+  background: white;
+  border-bottom: 1px solid #394b50;
+}
+#newsLetter div {
+  color: #394b50;
+}
+#newsLetter div form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 35px 0;
+  font-family: "Lato", serif;
+  font-size: 14px;
+}
+#newsLetter div form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 260px;
+  border: 1px solid #394b50;
+  border-radius: 2px;
+  outline: none;
+  font-family: "OpenSans", sans-serif;
+  color: #6e6e6e;
+  margin: 7px 7px;
+  padding: 15px 17px;
+}
+#newsLetter div form input[type="button"] {
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+#newsLetter div div {
+  background: url(../img/worldmap.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+}
+#newsLetter div div div {
+  margin: 45px auto 40px auto;
+  width: 280px;
+  height: 280px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #394b50;
+  color: white;
+}
+#newsLetter div div div:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+#newsLetter div div div h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#newsLetter div div div p {
+  color: #b5bbc1;
+  line-height: 30px;
+}
+#newsLetter div div div a {
+  text-decoration: none;
+  color: #b5bbc1;
+  line-height: 30px;
+}
+#newsLetter div div div a:last-of-type {
+  text-decoration: none;
+  color: #ffbb42;
+}
+#newsLetter div img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 210px;
+}
+
+@media screen and (max-width: 640px) {
+  #newsLetter div div {
+    background-size: cover;
   }
 }
 
