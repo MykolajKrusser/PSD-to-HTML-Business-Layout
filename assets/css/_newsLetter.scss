@@ -1,6 +1,5 @@
 #newsLetter{
   background: $newsletterBG;
-  border-bottom: 1px solid $textColor;
   div{
     @extend %flex;
     @extend %wrapper;

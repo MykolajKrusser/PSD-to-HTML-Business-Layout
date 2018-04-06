@@ -5,14 +5,14 @@ lato fore h2
 /*
 headers fonts
  */
-nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #happyClients .happyClients__header, #happyClients .happyClients__items, #newsLetter div {
+nav, header .wrapper, #our_services div, #our_services div div, #aboutUs div, #price .price__item, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #happyClients .happyClients__header, #happyClients .happyClients__items, #newsLetter div, #contact div {
   max-width: 1170px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div, #happyClients .happyClients__header, #happyClients .happyClients__items, #happyClients .happyClients__items div, #happyClients .happyClients__items div div, #newsLetter div, #newsLetter div form {
+nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of-type, #our_services div, #our_services div div, #our_services div div div, #our_services div div div div, #aboutUs div, #aboutUs div .aboutUs__container, #price, #price .price__header, #price .price__item, #price .price__item div, #howItWorks, #howItWorks .howItWorks__header, #howItWorks .howItWorks__items, #howItWorks .howItWorks__items div, #happyClients .happyClients__header, #happyClients .happyClients__items, #happyClients .happyClients__items div, #happyClients .happyClients__items div div, #newsLetter div, #newsLetter div form, #contact div, #contact div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@ nav, nav div, header .wrapper, header .wrapper form, header .wrapper div:last-of
       flex-wrap: wrap;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"] {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"], #contact div nav a:hover {
   color: white;
   background: #ffbb42;
 }
@@ -46,7 +46,7 @@ header .wrapper p, #our_services div p, #price .price__header article, #howItWor
   font-weight: 300;
 }
 
-#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header, #happyClients .happyClients__header, #newsLetter div {
+#our_services div, #price, #price .price__header, #howItWorks, #howItWorks .howItWorks__header, #happyClients .happyClients__header, #newsLetter div, #contact div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -60,7 +60,7 @@ header .wrapper p, #our_services div p, #price .price__header article, #howItWor
   text-align: center;
 }
 
-nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"], nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover, #newsLetter div div div {
+nav div a:hover, header .wrapper form input[type="button"], header .wrapper div:last-of-type span:hover, #aboutUs div .aboutUs__container a, #price .price__item div a, #howItWorks a, #newsLetter div form input[type="button"], #contact div nav a:hover, nav div a, header .wrapper div:last-of-type span, #aboutUs div .aboutUs__container a:hover, #price .price__item div, #price .price__item div:hover, #newsLetter div div div, #contact div nav a, #contact div div a, #contact div div a:hover {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -608,7 +608,6 @@ header .wrapper div:last-of-type span:hover {
 }
 #newsLetter {
   background: white;
-  border-bottom: 1px solid #394b50;
 }
 #newsLetter div {
   color: #394b50;
@@ -692,6 +691,83 @@ header .wrapper div:last-of-type span:hover {
   #newsLetter div div {
     background-size: cover;
   }
+}
+#contact {
+  background: white;
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+#contact div {
+  color: #394b50;
+}
+#contact div nav {
+  margin-top: 70px;
+  width: 65%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+#contact div nav a {
+  text-decoration: none;
+  color: #394b50;
+  padding: 10px;
+}
+#contact div nav a:hover {
+  padding: 10px;
+  border-radius: 5px;
+}
+#contact div p {
+  margin-top: 30px;
+  font-size: 25px;
+}
+#contact div div {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+}
+#contact div div a {
+  margin: 0 10px;
+  color: #709dca;
+}
+#contact div div a .svg-inline--fa.fa-w-16 {
+  height: 2em;
+  width: 2em;
+}
+#contact div div a .svg-inline--fa.fa-w-9 {
+  height: 2em;
+  width: 2em;
+}
+#contact div div a .svg-inline--fa.fa-w-20 {
+  height: 2em;
+  width: 2em;
+}
+#contact div div a .svg-inline--fa.fa-w-14 {
+  height: 2em;
+  width: 2em;
+}
+#contact div div a:hover {
+  color: #ffbb42;
+}
+
+footer {
+  background: #6699cc;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 10vh;
+  margin-top: 50px;
+}
+footer div {
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+#contact{
+  background: $newsletterBG;
+  font-family: $ff2;
+  font-weight: 400;
+  div{
+    @extend %flex;
+    @extend %wrapper;
+    @extend %blocksCol;
+    color: $textColor;
+    nav{
+      margin-top: 70px;
+      width: 65%;
+      font-size: $fz;
+      text-transform: uppercase;
+      a{
+        text-decoration: none;
+        color: $textColor;
+        padding: 10px;
+        @extend %transition;
+        &:hover{
+          @extend %yellowBtn;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+    p{
+      margin-top: 30px;
+      font-size: 25px;
+    }
+    div{
+      @extend %flex;
+      flex-wrap: nowrap;
+      margin-top: 30px;
+      flex-direction: row;
+      width: 20%;
+      a{
+        margin: 0 10px;
+        color:$iconColor;
+        .svg-inline--fa.fa-w-16{
+          height: 2em;
+          width: 2em;
+        }
+        .svg-inline--fa.fa-w-9{
+          height: 2em;
+          width: 2em;
+        }
+        .svg-inline--fa.fa-w-20{
+          height: 2em;
+          width: 2em;
+        }
+        .svg-inline--fa.fa-w-14{
+          height: 2em;
+          width: 2em;
+        }
+        @extend %transition;
+        &:hover{
+          @extend %transition;
+          color:$btnColor;
+        }
+      }
+    }
+  }
+}
+footer{
+  background: $bgMainColor;
+  color:$secondTextColor;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  margin-top: 50px;
+  div{
+    font-size: $fz;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
